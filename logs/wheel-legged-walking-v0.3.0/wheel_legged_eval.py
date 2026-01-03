@@ -4,8 +4,8 @@ import pickle
 import numpy as np
 
 import torch
-from wheel_legged_env import WheelLeggedEnv
-from rsl_rl.runners import OnPolicyRunner
+# from wheel_legged_env import WheelLeggedEnv
+# from rsl_rl.runners import OnPolicyRunner
 
 import genesis as gs
 
@@ -15,6 +15,19 @@ parent_dir = os.path.dirname(current_dir)
 sys.path.append(parent_dir)
 from utils import gamepad
 import copy
+
+# gs.init(backend=gs.gpu,logging_level="warning")
+gs.init(backend=gs.gpu)
+
+# 现在再导入依赖 Genesis 的模块
+# 现在再导入这些依赖 Genesis 的模块
+from rsl_rl.runners import OnPolicyRunner
+from wheel_legged_env import WheelLeggedEnv
+
+# ----------------------------------------------
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# ... 其余代码保持不变 ...
 
 def main():
     parser = argparse.ArgumentParser()

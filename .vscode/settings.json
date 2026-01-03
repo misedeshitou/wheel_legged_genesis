@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/home/albusgive/wheel_legged_genesis/sim2sim/cpp"
+    "cmake.sourceDirectory": "/home/albusgive/wheel_legged_genesis/sim2sim/cpp",
+    "cmake.ignoreCMakeListsMissing": true
 }
